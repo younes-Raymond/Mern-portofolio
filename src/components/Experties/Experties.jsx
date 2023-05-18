@@ -3,6 +3,7 @@ import { projectExperience, WhatDoIHelp } from '../../utils/data'
 import css from './Experties.module.scss'
 import {motion} from 'framer-motion'
 import {fadeIn, staggerContainer, textVariant} from '../../utils/motion.js'
+
 const Experties = () => {
   return (
     <section className={css.wrapper}>
@@ -38,9 +39,8 @@ const Experties = () => {
             variants={textVariant(0.5)}
             className={css.rightSide}>
 
-                <span className='primaryText'>What do I help? </span>
-                {WhatDoIHelp.map((paragraph, i)=> <span className='secondaryText' key={i}>{paragraph}</span>)}
-
+                <span className='primaryText'>What do I specialize in as a MERN developer?</span>
+                <span className='secondaryText'>I specialize in JavaScript-based web development using the MERN stack (MongoDB, Express, React, and Node.js). I have experience building scalable and performant web applications using modern web development tools and techniques.</span>
 
                 <div className={`flexCenter ${css.stats}`}>
                     <div className={`flexCenter ${css.stat}`}>

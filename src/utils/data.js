@@ -3,13 +3,13 @@ import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {
-    name: "Website Design",
+    name: "Web Development",
     projects: 76,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
+    name: "Mobile App Development",
     projects: 63,
     icon: CiMobile1,
     bg: "#EEC048",
@@ -21,102 +21,100 @@ export const projectExperience = [
     bg: "#F26440",
   },
 ];
-
 export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-  "We use process design to create digital products. Besides that also help their business",
-];
+  "As a MERN stack developer, I can help you build scalable and performant web applications using MongoDB, Express, React, and Node.js. I specialize in using modern web development tools and techniques, including TypeScript and CSS, to create high-quality digital products that meet your business needs.",
+  "I am always eager to learn new technologies and frameworks to improve my skills and stay up-to-date with the latest trends in web development. Let me help you find a solution and solve your problems with my expertise.",
+]
 
 export const workExp = [
   {
     place: "Self-Employed, Brisbane",
     tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    role: "Web Developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "As a web developer, I designed and developed websites and web applications using modern web development tools and techniques, including TypeScript and CSS. I worked closely with clients to ensure that their business needs were met and their digital products were of high quality.",
   },
   {
     place: "New Man Services",
     tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    role: "Frontend Developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "As a frontend developer, I designed and developed user interfaces and experiences for web and mobile applications using modern web development tools and techniques, including TypeScript and CSS. I worked closely with backend developers to ensure that the designs were implemented accurately and efficiently.",
   },
   {
     place: "Global Solution",
     tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
+    role: "Full Stack Developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "As a full stack developer, I led the development process for digital products, from ideation to launch. I collaborated with cross-functional teams to ensure that the products met user needs and business goals. I used modern web development tools and techniques, including TypeScript and CSS, to create high-quality digital products.",
   },
 ];
 
 export const comments = [
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Kevin Nguyen",
+    post: "CEO",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is an excellent MERN stack developer. He helped us build a scalable and performant web application using MongoDB, Express, React, and Node.js. His expertise in modern web development tools and techniques, including TypeScript and CSS, was invaluable to our project.",
     img: "./people2.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "David Kim",
+    post: "CTO",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is a talented web developer who designed and developed a high-quality website for our business. He used modern web development tools and techniques, including TypeScript and CSS, to create a scalable and performant digital product that met our business needs.",
     img: "./people1.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Bob Johnson",
+    post: "Product Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is a skilled frontend developer who designed and developed user interfaces and experiences for our web and mobile applications. He used modern web development tools and techniques, including TypeScript and CSS, to create high-quality digital products that met our business needs.",
     img: "./people2.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Sarah Lee",
+    post: "Marketing Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is a talented full stack developer who led the development process for our digital products. He used modern web development tools and techniques, including TypeScript and CSS, to create high-quality digital products that met our user needs and business goals.",
     img: "./people1.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "David Kim",
+    post: "Product Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is an exceptional MERN stack developer who helped us build a scalable and performant web application using MongoDB, Express, React, and Node.js. His expertise in modern web development tools and techniques, including TypeScript and CSS, was invaluable to our project.",
     img: "./people2.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Emily Chen",
+    post: "CEO",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is a highly skilled web developer who designed and developed a high-quality website for our business. He used modern web development tools and techniques, including TypeScript and CSS, to create a scalable and performant digital product that met our business needs.",
     img: "./people1.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Michael Lee",
+    post: "CTO",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is a talented frontend developer who designed and developed user interfaces and experiences for our web and mobile applications. He used modern web development tools and techniques, including TypeScript and CSS, to create high-quality digital products that met our business needs.",
     img: "./people2.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Rachel Patel",
+    post: "Marketing Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is a skilled full stack developer who led the development process for our digital products. He used modern web development tools and techniques, including TypeScript and CSS, to create high-quality digital products that met our user needs and business goals.",
     img: "./people1.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Alex Wong",
+    post: "Product Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Younes is an excellent MERN stack developer who helped us build a scalable and performant web application using MongoDB, Express, React, and Node.js. His expertise in modern web development tools and techniques, including TypeScript and CSS, was invaluable to our project.",
     img: "./people2.png",
   },
 ];
-
 export const sliderSettings = {
   dots: true,
   infinite: false,
@@ -154,3 +152,4 @@ export const sliderSettings = {
     },
   ],
 };
+

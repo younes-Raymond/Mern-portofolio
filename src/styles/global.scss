@@ -1,7 +1,8 @@
 @import './contants.scss';
 
+
 .bg-primary {
-  background: #F8F7F1;
+  background: linear-gradient(rgba(108, 99, 255, 0.5), rgba(108, 99, 255, 0.5)), rgba(248, 247, 241, 0.8);
 }
 
 .innerWidth {
@@ -102,13 +103,14 @@
   display: flex;
   justify-items: end;
 }
-
 .primaryText {
   @media (max-width: $sm) {
     font-size: 2.5rem;
   }
   font-size: 3rem;
   font-weight: bold;
+  color: #6C63FF; /* Change the color to a shade of purple */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow */
 }
 
 .secondaryText {

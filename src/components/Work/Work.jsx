@@ -3,6 +3,7 @@ import { workExp } from "../../utils/data";
 import css from "./Work.module.scss";
 import {motion} from 'framer-motion'
 import { draw, fadeIn, slideIn, staggerChildren, textVariant2, zoomIn } from "../../utils/motion";
+
 const Work = () => {
   return (
     <motion.section 
@@ -15,7 +16,7 @@ const Work = () => {
 
       <div className={`innerWidth flexCenter ${css.container}`}>
         {/* heading */}
-        <span className="primaryText yPaddings">My Work Experience</span>
+        <span className="primaryText yPaddings">My MERN Journey</span>
 
         <div className={`flexCenter ${css.experiences}`}>
           {workExp.map((exp, i) => {
