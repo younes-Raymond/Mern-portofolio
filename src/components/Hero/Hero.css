@@ -1,0 +1,23 @@
+button {
+    width: 100px;
+    border-radius: 15px;
+    border: 10px;
+    height: 30px;
+    filter: drop-shadow(5px 5px 4px purple);
+    background: purple;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    padding: 5px;
+    filter: drop-shadow(5px 5px 15px rgba(128, 0, 128, 0.182));
+}
+
+@media (max-width: 600px) {
+    button {
+        display: none;
+    }
+}

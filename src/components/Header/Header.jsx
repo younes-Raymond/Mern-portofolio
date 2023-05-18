@@ -6,10 +6,15 @@ import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 
+
+
+
+
 const Header = () => {
   const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
+
 
   //to handle click outside of sidebar on mobile
   useOutsideAlerter({
@@ -27,7 +32,16 @@ const Header = () => {
       style={{boxShadow: headerShadow}}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-      <div className={css.name} style={{fontWeight: 'bold', transition: 'box-shadow 0.3s ease-in-out', cursor:'pointer'}}>Younes</div>
+      {window.innerWidth > 600 ? (
+          <img
+            src="../../../public/logo.png"
+            style={{ width: "6%" }}
+            alt="logo"
+            id="logo"
+          />
+        ) : null}
+
+      <div  className={css.name} style={{fontWeight: 'bold', transition: 'box-shadow 0.3s ease-in-out', cursor:'pointer'}}>Younes</div>
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}

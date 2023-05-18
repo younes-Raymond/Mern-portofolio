@@ -3,7 +3,7 @@ import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 import { FaEnvelope } from 'react-icons/fa';
-
+import './Hero.css'
 const Hero = () => {
 
   function handleClick() {
@@ -38,14 +38,20 @@ const Hero = () => {
           variants={fadeIn("up", "tween", 0.3, 1)}
           className={css.person}
         >
-          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./personn.png" alt="" />
+          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./person.png" alt="" />
         </motion.div>
 
-
+     <motion.div 
+     
+     >
+      <motion.button  >
+        Hire Me 
+      </motion.button>
+     </motion.div>
         <a className={css.email} href="#" onClick={handleClick}>
           <FaEnvelope size={40} /> Inbox me
         </a>
-
+         <motion.button>Download Me </motion.button>
         <div className={css.lowerElements}>
           <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
             <div className="primaryText">5</div>
