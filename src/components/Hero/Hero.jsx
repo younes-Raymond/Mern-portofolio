@@ -4,12 +4,15 @@ import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 import { FaEnvelope } from 'react-icons/fa';
 import './Hero.css'
+import axios from 'axios'
+
 const Hero = () => {
 
   function handleClick() {
     window.location.href = 'mailto:younesraymond@gmail.com';
   }
 
+  
   return (
     <section className={`paddings ${css.wrapper}`}>
       <motion.div
@@ -44,17 +47,18 @@ const Hero = () => {
      <motion.div 
      
      >
+      <a href="https://www.linkedin.com/in/younes-raymond-188a40241/" target="_blanck">
       <motion.button  >
         Hire Me 
       </motion.button>
+      </a>
      </motion.div>
-        <a className={css.email} href="#" onClick={handleClick}>
-          <FaEnvelope size={40} /> Inbox me
-        </a>
+        <a href="../../../public/resume (2).pdf" download>
          <motion.button>Download Me </motion.button>
+         </a>
         <div className={css.lowerElements}>
           <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
-            <div className="primaryText">5</div>
+            <div className="primaryText">3</div>
             <div className="secondaryText">
               <div>Years</div>
               <div>Experience</div>

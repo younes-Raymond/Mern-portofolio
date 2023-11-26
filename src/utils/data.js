@@ -4,23 +4,25 @@ import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {
     name: "Web Development",
-    projects: 76,
+    projects: 8,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Development",
-    projects: 63,
+    name: "full Stack",
+    projects: 6,
     icon: CiMobile1,
     bg: "#EEC048",
   },
   {
     name: "Brand Identity",
-    projects: 47,
+    projects: 5,
     icon: MdWorkspacesOutline,
     bg: "#F26440",
   },
 ];
+
+
 export const WhatDoIHelp = [
   "As a MERN stack developer, I can help you build scalable and performant web applications using MongoDB, Express, React, and Node.js. I specialize in using modern web development tools and techniques, including TypeScript and CSS, to create high-quality digital products that meet your business needs.",
   "I am always eager to learn new technologies and frameworks to improve my skills and stay up-to-date with the latest trends in web development. Let me help you find a solution and solve your problems with my expertise.",

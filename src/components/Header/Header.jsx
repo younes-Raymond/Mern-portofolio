@@ -1,27 +1,36 @@
 import React, { useEffect, useRef, useState } from "react";
 import css from "./Header.module.scss";
 import { BiPhoneCall, BiMenuAltRight } from "react-icons/bi";
+import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
-
-
-
-
+import Switch from 'react-switch';
 
 const Header = () => {
   const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
-
+  const [theme, setTheme] = useState('light');
 
   //to handle click outside of sidebar on mobile
   useOutsideAlerter({
     menuRef,
     setMenuOpened,
   });
-
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+    document.body.classList.toggle('dark-mode', newTheme === 'dark');
+  };
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+    }
+  }, []);
   return (
     <motion.div
       variants={headerVariants}
@@ -32,15 +41,7 @@ const Header = () => {
       style={{boxShadow: headerShadow}}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-      {window.innerWidth > 600 ? (
-          <img
-            src="../../../public/logo.png"
-            style={{ width: "6%" }}
-            alt="logo"
-            id="logo"
-          />
-        ) : null}
-
+     
       <div  className={css.name} style={{fontWeight: 'bold', transition: 'box-shadow 0.3s ease-in-out', cursor:'pointer'}}>Younes</div>
         <ul
           className={`flexCenter ${css.menu}`}
@@ -54,7 +55,7 @@ const Header = () => {
           <li className={`flexCenter ${css.phone}`}>
             <p>+212 (682) 018 371</p>
             <a href="https://wa.me/212682018371" target="_blank">
-  <BiPhoneCall size={"40px"} />
+  <FaWhatsapp size={"40px"} />
 </a>
           </li>
         </ul>
