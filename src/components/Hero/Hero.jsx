@@ -53,7 +53,7 @@ const Hero = () => {
       </motion.button>
       </a>
      </motion.div>
-        <a href="../../../public/web developer.pdf" download>
+        <a href="/web developer.pdf" download>
          <motion.button>Download Me </motion.button>
          </a>
         <div className={css.lowerElements}>
