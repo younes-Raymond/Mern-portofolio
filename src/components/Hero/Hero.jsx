@@ -48,7 +48,8 @@ const Hero = () => {
   <motion.span className="secondaryText" variants={fadeIn("top", "tween", 0.4, 1)}>
 
     <span className="t">Volunteering Background</span>
-   
+   {/* 
+    */}
   </motion.span>
 
   <motion.div variants={fadeIn("up", "tween", 0.3, 1)} className={css.volunteering}>
