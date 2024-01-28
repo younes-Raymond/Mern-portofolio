@@ -7,31 +7,62 @@ import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 import Switch from 'react-switch';
-
+import { FaGithubAlt, FaSkype, FaTwitter, FaDiscord ,FaLinkedin} from "react-icons/fa";
+import './Contacts.css'
+import { CgMailOpen , CgMicrosoft} from "react-icons/cg";
 const Header = () => {
   const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
-  const [theme, setTheme] = useState('light');
-
   //to handle click outside of sidebar on mobile
   useOutsideAlerter({
     menuRef,
     setMenuOpened,
   });
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.body.classList.toggle('dark-mode', newTheme === 'dark');
-  };
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      document.body.classList.toggle('dark-mode', savedTheme === 'dark');
-    }
-  }, []);
   return (
+    <>
+
+    <ul className="social-Media ">
+        <li>
+            <a href="https://github.com/younes-Raymond" target="_blank">
+                Github <FaGithubAlt />
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/younes-raymond-188a40241/" target="_blank">
+                Linkedin <FaLinkedin />
+            </a>
+        </li>
+        <li>
+            <a href="https://discord.gg/wV72As9v" target="_blank">
+                Discord <FaDiscord />
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/younesraymond1" target="_blank">
+                Twitter <FaTwitter />
+            </a>
+        </li>
+        <li>
+            <a href="mailto:raymondyounes2@gmail.com" target="_blank">
+                Email <CgMailOpen />
+            </a>
+        </li>
+        <li>
+            <a href="https://teams.live.com/l/community/FEAK0CC6hOGswNtQAI" target="_blank">
+                Teams <CgMicrosoft  />
+            </a>
+        </li>
+        <li>
+            <a href="https://join.skype.com/CwhK3EvufRT4" target="_blank">
+                Skype <FaSkype  />
+            </a>
+        </li>
+    </ul>
+
+
+
+
     <motion.div
       variants={headerVariants}
       initial="hidden"
@@ -69,6 +100,7 @@ const Header = () => {
         </div>
       </div>
     </motion.div>
+    </>
   );
 };
 

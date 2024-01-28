@@ -2,7 +2,13 @@
 
 
 .bg-primary {
-  background: linear-gradient(rgba(146, 99, 255, 0.5), rgba(108, 99, 255, 0.5)), rgba(248, 247, 241, 0.8);
+background: rgba(0, 0, 0, 0.1);
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+border: 1px solid rgba(0, 0, 0, 0.54);
 }
 
 .innerWidth {
