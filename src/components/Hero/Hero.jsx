@@ -22,20 +22,20 @@ const Hero = () => {
   viewport={{ once: false, amount: 0.25 }}
   className={`innerWidth ${css.container}`}
 >
-  <div className={css.upperElements}>
-    <motion.span className="primaryText" variants={fadeIn("right", "tween", 0.2, 1)}>
-      Hey There,
-      <br />
-      I'm Younes Raymond.
-    </motion.span>
-    <motion.span className="secondaryText" variants={fadeIn("left", "tween", 0.4, 1)}>
-       Full Stack Web developer.
-      <br />
-      I love building web applications.
-      <br />
-      and solving problems.
-    </motion.span>
-  </div>
+<div className={css.upperElements}>
+  <motion.span className="primaryText" variants={fadeIn("right", "tween", 0.2, 1)}>
+    Hello,
+    <br />
+    I'm Younes Raymond.
+  </motion.span>
+  <motion.span className="secondaryText" variants={fadeIn("left", "tween", 0.4, 1)}>
+    Full Stack Developer.
+    <br />
+    Passionate about web development
+    <br />
+    and problem-solving.
+  </motion.span>
+</div>
 
   <motion.div
     variants={fadeIn("up", "tween", 0.3, 1)}
@@ -47,16 +47,20 @@ const Hero = () => {
   {/* Mention your volunteering background */}
   <motion.span className="secondaryText" variants={fadeIn("top", "tween", 0.4, 1)}>
 
-    <span className="t">Volunteering Background</span>
+    <span className="t">  Actively contributing to global solutions,
+</span>
    
   </motion.span>
 
   <motion.div variants={fadeIn("up", "tween", 0.3, 1)} className={css.volunteering}>
   <span className="secondaryText">
-      Actively contributed to volunteer projects, including earthquake relief efforts in Morocco.
-      <br />
-      Collaborated with diverse teams and project managers to enhance user experiences and deliver innovative solutions.
-    </span>   
+  <br />
+  including various humanitarian efforts.
+  <br />
+  Collaborating with diverse teams
+  <br />
+  to enhance user experiences and deliver solutions.
+</span> 
   </motion.div>
 
   

@@ -11,7 +11,6 @@ const Footer = () => {
     viewport={{ once: false, amount: 0.25 }}
     className={`paddings ${css.wrapper}`}>
       
-      
       <motion.div
       variants={footerVariants}
       className={`innerWidth yPaddings flexCenter ${css.container}`}>
@@ -21,7 +20,7 @@ const Footer = () => {
             amazing together.
           </span>
           <span className="primaryText">
-            Start by <a href="raymondyounes2@gmail.com">saying hi</a>
+            Start by <a href="https://www.linkedin.com/in/younes-raymond-188a40241/">saying hi</a>
           </span>
         </div>
 
